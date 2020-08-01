@@ -1,0 +1,866 @@
+/* CSS for top header */
+
+*{margin: 0; padding: 0; box-sizing: border-box;
+}
+li{list-style: none;}
+hr{
+
+
+      height: 0px;
+
+      border-color: #cccccc;
+      border-width: 1px;
+
+
+}
+/* scroll on top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5fdde5; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ff5f40; /* Add a dark-grey background on hover */
+}
+/*prerequisites*/
+
+body {
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  background-color: #f5f5f5;
+
+}
+
+p{
+  font-weight: 400;
+  color: #888888!important;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h1, .h1 {
+  font-size: 70px;
+}
+
+h2, .h2 {
+  font-size: 48px;
+  color: #05dfd7;
+
+}
+
+h3, .h3 {
+  font-size: 44px;
+}
+
+h4, .h4 {
+  font-size: 22px;
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+.anc{
+  color: #c060a1;
+
+}
+
+/*prerequisites*/
+.top-header{
+  width: 100%!important;
+  height: 9vh;
+  background-color: #142850!important;
+  padding-bottom: 15px!important;
+}
+.fa{
+  width: 100%;
+  height: inherit;
+  padding-bottom: none!important;
+
+
+}
+.hover-ripple {
+  transition: .2s ease-in;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+
+
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+
+a:hover {
+  color: #02adc6;
+}
+
+a.text-white:hover, a.text-light:hover {
+  color: #02adc6 !important;
+}
+
+a h4:hover, a h5:hover {
+  color: #02adc6;
+}
+
+
+/* navbar */
+.fal{
+  font-family: "Montserrat", sans-serif!important;
+  width: 100%;
+}
+/* navigation */
+.navvy {
+font-family: "Montserrat", sans-serif!important;
+}
+.navigation {
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.09);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  padding: 0;
+
+}
+.img-fluid{
+  height: 2rem;
+}
+.btn-primary{
+
+  margin: -20px;
+  border-color: #fff;
+}
+
+.navbar-collapse {
+
+  transition: 0.2s ease;
+}
+
+.navbar .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar .dropdown-menu {
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+
+  border: 0;
+  top: 30px;
+  left: -25px;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  transition: .1s ease;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background: #fff;
+}
+
+
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: unset;
+            transform-origin: unset;
+  }
+}
+
+.navbar .dropdown-menu.view {
+  visibility: visible !important;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 891px) {
+  .navbar .dropdown-menu.view {
+    display: block;
+  }
+}
+
+.navbar .dropdown-menu.show {
+  visibility: hidden;
+}
+
+@media (max-width: 991px) {
+  .navbar .dropdown-menu.show {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.navbar .dropdown-item {
+  position: relative;
+  color: #172231;
+  transition: 0.1s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 891px) {
+  .navbar .dropdown-item {
+    text-align: center;
+  }
+}
+
+.navbar .dropdown-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.navbar .dropdown-item:hover {
+  color: #02adc6;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #172231;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #02adc6;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 8px;
+  margin-right: 3px;
+}
+
+
+@media (max-width: 1200px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px!important;
+  }
+}
+@media (max-width: 570px) {
+  .top-header {
+    height: auto;
+
+  }
+}
+  /* welcome div */
+  .welcome {
+    color: #111d5e!important;
+    text-align: center!important;
+    display: flex;
+    padding-left: 18%!important;
+
+  }
+  .welcom{
+    color: #111d5e!important;
+    text-align: center!important;
+    display: flex;
+    padding-left: 15%!important;
+
+  }
+  .wel{
+      background-image: url('https://images.pexels.com/photos/265702/pexels-photo-265702.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+      padding-top: 12%;
+      padding-bottom: 12%
+  }
+ .welc{
+   color:#f5f5f5!important;
+ }
+  /* cards section */
+
+  .header-extradiv{
+	width: 100%;
+	height: auto;
+	margin: 100px 0;
+}
+
+.extra-div1{
+	background: #f5f5f5;
+	border:medium none;
+	padding: 50px!important;
+	border-radius: 3px;
+	transition: 0.3s;
+
+}
+.extra-div1:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20%);
+
+}
+.extra-div{
+	background: #f5f5f5;
+	border:medium none;
+  padding: 20px!important;
+	border-radius: 3px;
+	transition: 0.3s;
+
+}
+.extra-div:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+
+}
+.awe{
+  color: #111d5e;
+}
+/***************service div CSS starts here**********/
+.headings h2{
+  font-size: 2.7rem!important;
+}
+.service-div{
+  width: 100%;
+  height: auto;
+	padding: 50px!important;
+	position: relative!important
+}
+
+ .service-div:before{
+	content: ""!important;
+
+	top: 0%!important;
+	bottom: 0%!important;
+	right: 0!important;
+	left: 0!important;
+	z-index: -1!important;
+	background: linear-gradient(160deg, #f5f5f5 65%,#111d5e 0%)!important;
+
+  }
+  .card{
+    padding-bottom: 4rem!important;
+
+  }
+  @media screen and (max-width: 570px) {
+    .headings h2{
+      width: 75%!important;
+      margin-left: 0!important;
+      font-size: 1.9rem!important;
+
+    }
+  }
+
+
+  /* testimonial */
+  .testimonial{
+    width: 100%;
+    height: auto;
+
+
+
+  }
+.testy{
+  color: #000;
+  font-weight: bold;
+  padding-top: 3%;
+  font-family: 'Fondamento', cursive;
+}
+.tes{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 600px) {
+   .testimonial{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000!important;
+
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.text p{
+  color: #000!important;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* testimonials ends here */
+/**************footer CSS starts here************/
+.footersection{
+  display: block;
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+
+}
+section{
+  margin-bottom: 5px!important;
+}
+.footersection li a{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+	text-transform: capitalize;
+  text-shadow: 0 2px  5px rgba(0,0,0,0.4);
+
+
+}
+.Copyright{
+	padding-bottom: 10px;
+}
+.footersection h3{
+  text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 25px;
+	font-size: 1.2rem!important;
+	font-weight: 600;
+	text-shadow: 0 2px  5px rgba(0,0,0,0.4);
+	padding-top: 10px;
+}
+
+.pricing{
+	height: auto!important;
+	margin-top: 10px!important;
+}
+.payment{
+
+    font-family: "Montserrat", sans-serif;
+    text-decoration-color: #000;
+    padding: 0!important;
+    margin-top: 0!important;
+
+
+
+
+}
+ hr{
+   padding-top: 0;
+   padding-bottom: 0;
+
+}
+.payment h5{
+  color: #000;
+  font-weight: bolder;
+  text-shadow: 0 2px  5px rgba(0,0,0,0.4);
+  padding-top: 0!important;
+  margin-top: 0!important;
+  margin-right: 7%;
+}
+
+.last{
+  padding-bottom: 3%;
+}
+
+
+
+/**************footer CSS ends here************/
+/* for Secondary pages */
+.comp{
+  padding-top: 3%;
+  padding-bottom: 7%;
+  background-color: #cbeaed;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 100%;
+}
+}
+.comp h2{
+  	color:  #111d5e;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.comp p{
+  color: #07031a;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+}
+/* for About page */
+.about {
+  background-color: #1dd3bd!important;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+}
+.abou{
+  color: #000!important;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.about-image{
+  height: 15rem!important;
+  width: 100%;
+}
+
+/**************Contact Us CSS starts here**********/
+.contactus{
+	width: 100%!important;
+	height:100vh!important;
+	padding: 80px 0px!important;
+	position: relative!important;
+}
+.contactus:before{
+	content: ""!important;
+	position: absolute!important;
+	top: 0%!important;
+	left: 0%!important;
+	bottom: 0%!important;
+	right: 0%!important;
+	backgound:linear-gradient(330deg #16c9f6 55%, #f5f5f5 0%)!important;
+
+}
+.form-button button{
+
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+
+	text-align: center;
+	background: transparent;
+
+}
+
+
+
+
+
+
+/**************Contact Us CSS ends here************/
+
+/* t&c page CSS starts here */
+.terms{
+  background-color: #ff5722;
+
+}
+.terms p{
+  color: #000!important;
+  font-weight: bolder;
+}
+
+/* t&c page CSS ends here */
+
+/* CSS for report Pages */
+
+.extra-div2{
+	background: white;
+	border:medium none;
+	padding: 50px!important;
+	border-radius: 3px;
+	transition: 0.3s;
+  margin-left: 4%!important;
+  margin-right: 4%!important;
+  margin-top: 0%!important;
+  margin-bottom: 2%!important;
+
+
+
+}
+
+.extra-div2:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+
+
+}
+.extra-div2 p{
+  color: #000!important;
+  font-weight: bolder!important;
+
+}
+.extra-div2 a{
+  font-size: 1.9rem;
+
+}
+.spans{
+
+  position: absolute;
+  bottom: 1px;
+}
+.spans h6{
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+  font-weight: bolder;
+  color: #000;
+  text-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+
+}
+/* pagination */
+/* Pagination links */
+.pagination{
+ display: inline-block;
+ padding-left: 35%
+}
+.pagination a {
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/* CSS for Sub Report pages */
+.tab-content h2{
+  font-weight: bolder;
+}
+.tab-content p,h5{
+  font-weight: bolder;
+  color: #000!important;
+}
+
+.tab-pane{
+  padding: 1%!important;
+
+  width: 100%!important;
+  background-color: #f4f6ff;
+
+
+}
+.tab-pane li{
+  list-style: circle;
+  margin-left: 1%;
+}
+.tab-pane h6{
+  color: #fa1616!important;
+}
+.request{
+  margin-left: 50px!important;
+  margin-right: 50px!im;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+
+}
+input[type=email],select,textarea{
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=tel],select,textarea{
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+  margin-left: 8%;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-left: 8%;
+}
+
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 7%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+   input[type=submit] {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    margin-right: 0;
+  }
+}
+.breadcrumb li{
+  padding: 5px;
+}
+.sidebar{
+  background-color: #e7305b;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.sidebar:hover{
+  background-color: #6f4a8e;
+}
+.sidebar b{
+  color: #fff;
+}
